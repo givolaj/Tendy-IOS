@@ -1,0 +1,215 @@
+/* 
+  Localizable.strings
+  Tendy
+
+  Created by ATN on 24/08/2017.
+  Copyright © 2017 ATN. All rights reserved.
+*/
+"appName" = "טנדי";
+//MARK: -PageViewController
+"pageTitle1" = "דרך חדשה להגיד שלום";
+"pageTitle2" = "אתם בוחרים מה להציג";
+"pageTitle3" = "שמרו על קשר";
+"pageCenterText1" = "תנו ל-TENDY להכיר לכם את האנשים סביבכם בדרך חדשה וכיפית. אפשר לחפש לפי גיל, מקצוע, תחביבים ועוד.";
+"pageCenterText2" = "תוכל לבחור איזה פרטים אתם רוצים להציג בכל רגע נתון. עם TENDY, הפרופיל שלכם יכול להיות דינמי כמוכם.";
+"pageCenterText3" = "האנשים שתכירו דרך TENDY יכולים להישאר איתכם לאורך זמן. תוכלו לדבר בפרטיות בכל זמן ובכל מקום.";
+
+//"pageTitle1" = "גלה אנשים סביבך";
+//"pageTitle2" = "שמור על האנונימיות שלך";
+//"pageTitle3" = "שמור על קשר";
+//"pageCenterText1" = "עם טנדי תוכל לגלות את האנשים סביבך בדרך כיפית, את התחביבים, תחום העיסוק והגיל שלהם, וכל זה תוך כדי תנועה.";
+//"pageCenterText2" = "טנדי מאפשרת לכם להציג רק את הפרטים שאותם אתם רוצים לחשוף, ומאפשרת לכם להיות מי שבא לכם באותו היום, כל יום מחדש.";
+//"pageCenterText3" = "טנדי מוודאת את משתמשיה כדי שתוכלו להרגיש בטוחים. עם טנדי תוכלו ליצור קשרים אמיתיים שישארו אתכם לאורך זמן. מעניין אתכם? הכנסו.";
+"GOT IT" = "הבנתי";
+
+
+//MARK: -LoginViewController
+"Login" = "התחברות";
+"loginTitle" = "למה אתם מחכים? הירשמו עכשיו ותתחילו להכיר אנשים חדשים בכל מקום.";
+//"loginTitle" = "רוצה לגלות מי נמצא סביבך? עם טנדי תוכל לשוחח עם האנשים סביבך... ברחוב, בבית קפה, באוטובוס, ברכבת ובחוף הים... בטנדי העולם ידידותי יותר!";
+"connectTitle" = "התחבר אלנו דרך";
+"Or" = "או";
+"PhoneNum" = "מספר טלפון";
+"facebook" = "פייסבוק";
+
+//MARK: -LoginRegisterViewController
+
+"Register" = "הרשמה";
+"Login with facebook" = "התחבר עם פייסבוק";
+
+
+"setAllFileds"="יש למלא את כל השדות";
+"Set Required Fileds"="שדות חובה";
+"Succeeded"="נשמר בהצלחה";
+"Failed"="נכשל";
+"confirm password dos'nt not match"="הסיסמאות שהזנת לא תואמות";
+"sent reset to your mail"="אימות סיסמה נשלח למייל שלך";
+
+//MARK: -PhoneVerificationViewController
+"Phone Verification" = "וידוא מספר טלפון";
+"Verification title" = "טנדי תשלח הודעת SMS לוודא את מספר הטלפון שלך. הכנס את מספר הטלפון שלך כאן:";
+"Enter your phone number" = "הזן מספר טלפון";
+"SEND MESSAGE" = "שלח הודעה";
+"Enter code title" = "לחץ על הכפתור כדי לקבל קוד אימות";
+"didn't get title1" = "לא קיבלת קוד? נסה שוב בעוד ";
+"didn't get title2" = "שניות.";
+"Problem" = "נתקלנו בבעיה";
+"Invalide phone" = "מספר הטלפון לא נכון";
+"problem alert" = "מטעמי אבטחה, ישנו זמן המתנה של דקה בין שליחות קודים. עקוב אחרי הספירה מתחת לכפתור.";
+"Code sent title" = "הקוד נשלח!";
+"Code sent massege" = "הכנס את הקוד שקבלת בתיבת הטקסט למטה";
+"enter code holder" = "הכנס קוד כאן";
+"GO" = "המשך";
+"problem code" = "לא הזנת את הקוד הנכון.";
+"terms&condition" = "תנאי שימוש";
+
+//MARK: -CustomTabBarController
+"Profile" = "פרופיל";
+"Chats" = "צ׳אטים";
+"Discovery" = "גלה סביבך";
+
+//MARK: -MenuViewController
+"Account settings" = "הגדרות חשבון";
+"Discovery state" = "מצב נראות";
+"On" = "גלוי";
+"Off" = "חבוי";
+"Support" = "פנה לתמיכה";
+"Log out" = "התנתק";
+"version" = "גירסה";
+
+"log out mesg" = "בטוח שברצונך להתנתק?";
+
+//MARK: -ProfileViewController
+"Real profile" = "פרופיל פרטי";
+"Second Real Profile Title" = "לא ניתן לערוך חלק מהמידע בדף זה.\nבמקרים חריגים יש לפנות לצוות התמיכה (דרך תפריט הצד).";
+//"Second Real Profile Title" = "במקרים חריגים יש לפנות לצוות התמיכה\n(דרך תפרטי הצד).לא ניתן לערוך חלק מהמידע בדף זה.";
+"change profile picture" = "החלף תמונת פרופיל";
+"Name" = "שם";
+"nickname" = "כינוי";
+"Age" = "גיל";
+"Birthday date" = "תאריך יום ההולדת שלך";
+"Profession" = "תחום עיסוק";
+"Something about me" = "משהו על עצמי";
+"man" = "גבר";
+"woman" = "אישה";
+//לגירסה של אפל
+//"other" = "אחר";
+"other" = "לא צוין";
+
+"SAVE" = "שמור";
+
+"cant_without_username" = "בכדי לשמור פרופיל עליך למלא לכל הפחות כינוי";
+"cant_without_name"= "בכדי לשמור פרופיל עליך למלא לכל הפחות שם ותאריך לידה";
+
+"fill_profile_first" = "מלא את הפרופיל הציבורי שלך לפני שתמשיך למסכים האחרים.";
+
+"successfully_enrolled" = "צרו את הפרופיל הגלוי הראשון שלכם!\nהפרופיל הגלוי הוא הפנים שלכם בטנדי, כל האחרים יראו אתכם.";
+
+"wellcom" = "ברוכים הבאים!";
+//"first_profile-msg" = "בדף זה תוכל למלא ולערוך את הפרטים האמיתיים שלך. דף זה לא יוצג למשתמשים אחרים, אלא אם כן תבקש זאת במפורש. לאחר שמירת הפרופיל הפרטי לא ניתן לשנות את השם והגיל, זאת למען היושרה של המערכת. בהצלחה!";
+"first_profile-msg" = "בדף זה תוכל למלא ולערוך את הפרטים האמיתיים שלך. דף זה לא יוצג למשתמשים אחרים, אלא אם כן תבקש זאת במפורש. בהצלחה!";
+
+//MARK: DiscoveryViewController
+"animation" = "animation_HE";
+"DiscoveryOff title 1" = "אתה נמצא במצב חבוי.\nלחץ כאן בכדי להדליק את הגילוי.\n\nכשאתה במצב חבוי משתמשים אחרים לא יכולים לראות אותך, אך גם אתה לא יכול לראות אותם.";
+"inviteTitle" = "הזמנה לצ'אט";
+"inviteText" = "האם ברצונך להתחיל לשוחח עם ";
+"inviteYes" = "התחל";
+"inviteNo" = "בטל";
+
+//MARK: -ChatViewController
+//"wants to chat with you" = "רוצה לשוחח איתך";
+"profileShown" = "הפרופיל הנוכחי שלי";
+"enablePrivteProfile" = "שתף פרופיל פרטי";
+"block" = "חסום";
+
+"requestFriendshipTitle" = "בקשה להשאר בקשר";
+"requestFriendshipText1" = "אתה עומד להציע ל - ";
+"requestFriendshipText2" = " להשאר בקשר. אם הוא יבקש להשאר בקשר גם כן, שעון העצר יפסיק ותוכלו לצ'וטט לנצח. להמשיך?";
+"Yes" = "כן";
+"No" = "לא";
+
+"wants_to_chat" = " לשוחח איתך";
+"wants_male" = "מעוניין";
+"wants_female" = "מעוניינת";
+
+"time_over_title" = "נגמר הזמן";
+"time_over_text" = "הזמן להשאר בקשר נגמר. השיחה שלכם תמחק.";
+"stay" = "נשארו";
+"stay_in_touch" = "דקות. בקש שמירת קשר";
+
+"warning" = "זהירות";
+"sure_you_want_to_delete1" = "ביקשת לחסום את ";
+"sure_you_want_to_delete2" = ". לאחר החסימה לא תוכל לראות שוב את הצ׳אט. אתה רוצה להמשיך?";
+
+"sure_you_want_to_delete_message" = "למחוק את ההודעה?";
+//"Yes" = "כן";
+//"No" = "לא";
+
+"share_real_identity"= "שתף פרופיל פרטי";
+"real_details_text" = "ברגע שתשתף את הפרופיל הפרטי שלך הוא יופיע בשיחה זו לתמיד, ולא תוכל להחליף אותו. בטוח שברצונך לשתף?";
+
+"wants_to_stay_in_touch" = " רוצה להשאר בקשר";
+
+"required Enable Talk"="לא נוכל לעשות זאת בעוד שההזמנה לצאט לא תאושר";
+
+"issue" = "נתקלנו בבעיה!";
+"cant_block_before_inviting" = "אי אפשר לחסום שיחה לפני שהזמנת את הפרטנר שלך לצ'אט.";
+"youve_been_blocked" = "השיחה נחסמה על ידי אחד הצדדים.. המערכת תוציא אותך מדף הצ'אט עכשיו";
+
+"cant_share_real_before_writing_a_message"= "אתה לא יכול לשתף את הפרטים האמיתיים לפני שהזמנת את חברך לצ'אט (שליחת ההודעה הראשונה)";
+
+"cant_share_real_before_create"= "לא שמרת פרופיל פרטי (בתפריט צד)";
+
+
+"no chat image" = "no_chats";
+
+"write_a_msg" = "כתוב הודעה";
+"waiting_for_invitation" = "הוזמן. מחכה לאישור.";
+
+"You can not send more than five messages while chat invitations will not be approved" = "לא ניתן לשלוח יותר מחמש הודעות בעוד שההזמנה לצאט לא תאושר";
+
+"maleSentImage" = "שלח לך תמונה!";
+"femaleSentImage" = "שלחה לך תמונה!";
+
+"MaleSharingPrivateProfile" = "שתף אותך בפרופיל הפרטי שלו";
+"FemaleSharingPrivateProfile" = "שתפה אותך בפרופיל הפרטי שלה";
+
+//MARK: -ConfirmSendingPictureViewController
+"confirm image" = "אשר שליחה";
+
+//MARK: -extension
+"OK" = "אישור";
+
+//MARK: -UIAlertView
+"ERROR" = "שגיאה";
+"TryLater" = "נסה שוב מאוחר יותר";
+//"No Internet connection found" = "נמצאה שגיאה\nנסה שוב מאוחר יותר";
+"No Internet connection found" = "אינך מחובר לרשת. לא ניתן להשלים את הפעולה ללא חיבור לרשת.";
+//"No Internet connection found" = "אינך מחובר לרשת. לא ניתן להשלים את הפעולה ללא חיבור לרשת.\nנאלץ לסגור את האפליקציה.";
+"Error found" = "נמצאה שגיאה";
+"Turn on the Blutooth" = "הפעל את הבלוטוס";
+"Cancel" = "ביטול";
+
+"UsedPhotos" = "טנדי מכינה לכם תיקייה של תמונות טנדי";
+
+//MARK: ListCell
+"nickname:" = "כינוי: ";
+
+//MARK: -Notification
+"wants_to_chat" = "לשוחח איתך";
+"wants_male" = "מעוניין";
+"wants_female" = "מעוניינת";
+
+"tendi_found_1_s_people_around_you1" = "טנדי גילתה";
+"tendi_found_1_s_people_around_you2" = "אנשים סביבך";
+
+//MARK: -any///
+"Select a picture" = "בחר תמונה";
+"Camera" = "מצלמה";
+"Photo Album" = "אלבום תמונות";
+
+"register succeed"="נרשמת בהצלחה! צור את הפרופיל הציבורי הראשון שלך";
+"register mail invalide"="קרתה תקלה בהרשמה, שם המשתמש לא פנוי";
+"Set Required Fileds profile"="בכדי לשמור פרופיל עליך למלא לכל הפחות כינוי";
+"required Enable Talk"="לא נוכל לעשות זאת בעוד שההזמנה לצאט לא תאושר";

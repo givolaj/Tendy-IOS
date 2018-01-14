@@ -1,0 +1,226 @@
+/* 
+  Localizable.strings
+  Tendy
+
+  Created by ATN on 24/08/2017.
+  Copyright © 2017 ATN. All rights reserved.
+*/
+"appName" = "Tendy";
+//MARK: -PageViewController
+"pageTitle1" = "A new way of saying 'Hi!'";
+"pageTitle2" = "You choose what to share";
+"pageTitle3" = "Stay in touch";
+"pageCenterText1" = "Let Tendy scan your surrounding to find interesting people around you. Browse by age, profession' hobbies more.";
+"pageCenterText2" = "Decide what information your profile will show at any given time. With Tendy, your profile can be as dynamic as you.";
+"pageCenterText3" = "The people you meet with Tendy can become your long-time companions. Chat together from everywhere, at any time.";
+
+//"pageTitle1" = "Discover People Nearby";
+//"pageTitle2" = "Protect Your Privacy";
+//"pageTitle3" = "Keep In Touch";
+//"pageCenterText1" = "With Tendi you'll discover people around you in a fun way, their hobbies, professions and ages, all while on the move.";
+//"pageCenterText2" = "Tendy allows you to reveal only what you want to, and lets you be whoever you want, every day.";
+//"pageCenterText3" = "Tendy confirms it's users so you can feel safe, and from long lasting relasionships. want to see more? check it out!";
+"GOT IT" = "GOT IT";
+
+//MARK: -LoginViewController
+"Login" = "Login";
+"loginTitle" = "What are waiting for? Sign up now and start meeting interesting people around you.";
+//"loginTitle" = "Want to see who's around you? In the street, on a bus or on the beach, with tendi you can chat with pepole around you!";
+"connectTitle" = "Connect via";
+"Or" = "Or";
+"PhoneNum" = "Phone number";
+"facebook" = "Facebook";
+
+//MARK: -LoginRegisterViewController
+
+"Email" = "Email";
+"Password" = "Password";
+"Forgot your password" = "Forgot your password";
+"LOGIN" = "LOGIN";
+"don't have an account? register!" = "don't have an account? register!";
+
+"Register" = "Register";
+"Password Again" = "Password Again";
+"Name" = "Name";
+"REGISTER" = "REGISTER";
+"have an account? sign in!" = "have an account? sign in!";
+"Login with facebook" = "Login with facebook";
+
+"registerSucceeded" = "You've successfully enrolled! Create your first public profile";
+"GO" = "GO";
+
+
+"setAllFileds"="All fields are requested";
+"Set Required Fileds"="Set Required Fileds";
+"Succeeded"="Saved successfully";
+"Failed"="Failed";
+"confirm password dos'nt not match"="confirm password dos'nt not match";
+"sent reset to your mail"="sent reset to your mail";
+
+"register succeed"="You've successfully enrolled! Create your first public pofile";
+"register mail invalide"="קרתה תקלה בהרשמה, שם המשתמש לא פנוי";
+"required main profile"="מלא את הפרופיל הציבורי שלך לפני שתמשיך למסכים האחרים";
+"Set Required Fileds profile"="בכדי לשמור פרופיל עלייך למלא לכל הפחות כינוי";
+"required Enable Talk"="לא נוכל לעשות זאת בעוד שההזמנה לצאט לא תאושר";
+
+//MARK: -PhoneVerificationViewController
+"Phone Verification" = "Phone Verification";
+"Verification title" = "Tendi will send SMS message to verify your phone number. Enter your 10 digit phone number:";
+"Enter your phone number" = "Enter your phone number";
+"SEND MESSAGE" = "SEND MESSAGE";
+"Enter code title" = "click on button to get a verification code";
+"didn't get title1" = "Didnt get a code? ask in ";
+"didn't get title2" = "seconds.";
+"Problem" = "Problem";
+"Invalide phone" = "This is not a valid phone number";
+"problem alert" = "You can get a code once every 60 seconds.";
+"Code sent title" = "Code sent!";
+"Code sent massege" = "A code has been sent to your number via SMS. enter that code in the below textbox";
+"enter code holder" = "Enter code here";
+"GO" = "GO";
+"problem code" = "You've entered the worng code.";
+"terms&condition" = "terms and condition";
+
+//MARK: -CustomTabBarController
+"Profile" = "Profile";
+"Chats" = "Chats";
+"Discovery" = "Discovery";
+
+//MARK: -MenuViewController
+"Account settings" = "Account settings";
+"Discovery state" = "Discovery state";
+"On" = "On";
+"Off" = "Off";
+"Support" = "Support";
+"Log out" = "Log out";
+"version" = "version";
+
+"log out mesg" = "Sure you want to log out?";
+
+//MARK: -ProfileViewController
+"Real profile" = "Real profile";
+"Second Real Profile Title" = "You can't edit some of this data anymore.\nif you feel like you have to, contact our support (side menu).";
+"change profile picture" = "change profile picture";
+//"Name" = "Name";
+"nickname" = "Nick name";
+"Age" = "Age";
+"Birthday date" = "Birthday date";
+"Profession" = "Profession";
+"Something about me" = "Something about me";
+"man" = "man";
+"woman" = "woman";
+
+//לגירסה של אפל
+//"other" = "other";
+"other" = "unspecified";
+
+"SAVE" = "SAVE";
+
+"cant_without_username" = "Can't have a profile without a nick name";
+"cant_without_name"= "Can't have a profile without a name and a birthday date";
+
+"fill_profile_first" = "fill in your public profile before you go the the chats and discovery screens.";
+
+//"successfully_enrolled" = "!צרו את הפרופיל הגלוי הראשון שלכם\nהפרופיל הגלוי הוא הפנים שלכם בטנדי, כל אחרים יראו אתכם.";
+//"successfully_enrolled" = "You've successfully enrolled! Create your first public profile";
+"successfully_enrolled" = "You've sucssefully signed in! Create/edit your first public profile. Your public profile is how other Tendy users see you.";
+
+"first_profile-msg" = "Welcome to Tendy! this is your real profile details page. the details you write here will NOT be shown unless you decide to share them.";
+"wellcom" = "This is your real profile details page. the details you write here will NOT be shown unless you decide to share them.";
+//MARK: -DiscoveryViewController
+"animation" = "animation_EN";
+"DiscoveryOff title 1" = "You\'ve turned discovery off.\nClick here to turn discovery on.\n\nWhen your discovery is turned off you can\'t be seen, but you also can\'t see other people with Tendi.";
+
+"inviteTitle" = "Chat invite";
+"inviteText" = "Would you like to chat with ";
+"inviteYes" = "Ok";
+"inviteNo" = "Don't";
+
+//MARK: -ChatViewController
+//"wants to chat with you" = "wants to chat with you";
+"profileShown" = "My current profile";
+"enablePrivteProfile" = "Share Real Details";
+"block" = "Block";
+
+"requestFriendshipTitle" = "A request to stay in touch";
+"requestFriendshipText1" = "You're about to send a stay in touch request to - ";
+"requestFriendshipText2" = " If both of you request to stay in touch with each other, the timer will stop and you can chat forever. send a request?";
+"Yes" = "Yes";
+"No" = "No";
+
+"wants_to_chat" = " to chat with you";
+"wants_male" = "wants";
+"wants_female" = "wants";
+
+"time_over_title" = "Time over!";
+"time_over_text" = "Your time for staying in touch is over. This chat will be deleted.";
+
+"stay" = "";
+"stay_in_touch" = "minutes left. approve stay in touch request.";
+
+"warning" = "Warning";
+"sure_you_want_to_delete1" = "You're about to block ";
+"sure_you_want_to_delete2" = ". You won't be able to return to this chat. sure you want to continue?";
+
+"sure_you_want_to_delete_message" = "Delete the message?";
+
+"share_real_identity"= "Share real details";
+"real_details_text" = "Once you share your real details you can't go back, this chat partner will always see your real profile. sure you want to share it?";
+
+"wants_to_stay_in_touch" = " wants to stay in touch";
+
+"issue" = "Issue!";
+"cant_block_before_inviting" = "You can't block someone before you've invited them.";
+"youve_been_blocked" = "The chat has been blocked by one of the sides.. we'll now move out of the chat screen";
+
+"cant_share_real_before_writing_a_message"= "You can't share you real profile before you write you're first message to your chat buddy";
+
+"cant_share_real_before_create"= "You didn’t save a real profile (in the side menu)";
+
+"no chat image" = "no chats en";
+
+"write_a_msg" = "Write a message";
+
+"waiting_for_invitation" = "Invited. waiting for reply.";
+
+"You can not send more than five messages while chat invitations will not be approved" = "You can not send more than five messages while chat invitations will not be approved";
+
+"maleSentImage" = "has just sent you an image!";
+"femaleSentImage" = "has just sent you an image!";
+
+"MaleSharingPrivateProfile" = "share you in his private profile";
+"FemaleSharingPrivateProfile" = "share you in her private profile";
+
+//MARK: -ConfirmSendingPictureViewController
+"confirm image" = "Confirm image";
+
+//MARK: -extension
+"OK" = "OK";
+
+//MARK: -UIAlertView
+"ERROR" = "ERROR";
+"TryLater" = "Please try again later";
+//"No Internet connection found" = "Error found\nPlease try again later";
+"No Internet connection found" = "You're not connected to the internet. You can't proceed without an internet connection";
+//"No Internet connection found" = "You're not connected to the internet. You can't proceed without an internet connection.\nWe will close the app.";
+"Error found" = "Error found";
+"Turn on the Blutooth" = "Turn on the Blutooth";
+"Cancel" = "Cancel";
+
+"UsedPhotos" = "Tandy makes you a folder of tandy pictures";
+
+//MARK: -ListCell
+"nickname:" = "Nick name: ";
+
+//MARK: -Notification
+"wants_to_chat" = "to chat with you";
+"wants_male" = "wants";
+"wants_female" = "wants";
+
+"tendi_found_1_s_people_around_you1" = "Tendi found";
+"tendi_found_1_s_people_around_you2" = "people around you";
+
+//MARK: -any///
+"Select a picture" = "Select a picture";
+"Camera" = "Camera";
+"Photo Album" = "Photo Albom";

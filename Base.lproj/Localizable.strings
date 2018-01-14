@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Tendy
+
+  Created by ATN on 24/08/2017.
+  Copyright © 2017 ATN. All rights reserved.
+*/
+"setAllFileds"="setAllFileds";
+"Set Required Fileds"="Set Required Fileds";
+"Succeeded"="Succeeded";
+"Failed"="Failed";
+"confirm password dos'nt not match"="confirm password dos'nt not match";
+"sent reset to your mail"="sent reset to your mail";
+"register succeed"="נרשמת בהצלחה! צור את הפרופיל הציבורי הראשון שלך";
+"register mail invalide"="קרתה תקלה בהרשמה, שם המשתמש לא פנוי";
+"required main profile"="מלא את הפרופיל הציבורי שלך לפני שתמשיך למסכים האחרים";
+
+"Set Required Fileds profile"="בכדי לשמור פרופיל עלייך למלא לכל הפחות כינוי";
+"email vaild"="כתובת הדואר האלקטרוני אינה תקינה";
+"required Enable Talk"="לא נוכל לעשות זאת בעוד שההזמנה לצאט לא תאושר";
