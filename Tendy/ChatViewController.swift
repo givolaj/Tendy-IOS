@@ -401,7 +401,7 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
             self.tblList.scrollToRow(at: IndexPath(item:self.arrChats.count-1, section: 0), at: .bottom, animated: false)
             // self.tblList.scrollToBottom()
             // }
-        }
+        }   qa      
     }
     
     //MARK: - SaveTalkForever

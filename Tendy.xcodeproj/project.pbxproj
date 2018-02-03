@@ -879,7 +879,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SKDDQVP8S6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Tendy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -905,7 +905,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = SKDDQVP8S6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Tendy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
