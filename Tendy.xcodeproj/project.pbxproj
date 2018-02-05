@@ -653,7 +653,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:684184866481:ios:4ad7fb8f910605fb\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym \"${PROJECT_DIR}/Keys/tendi-27082-firebase-crashreporting-ooy4y-5269876616.json\"\n";
+			shellScript = "# Replace this with the GOOGLE_APP_ID from your GoogleService-Info.plist file\nGOOGLE_APP_ID=1:684184866481:ios:4ad7fb8f910605fb\n\n# Replace the /Path/To/ServiceAccount.json with the path to the key you just downloaded\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym-util.bash \"${PROJECT_DIR}/Keys/tendi-27082-firebase-crashreporting-ooy4y-5269876616.json\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

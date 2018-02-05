@@ -129,19 +129,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0n-i5-aBg">
-                                <rect key="frame" x="48.5" y="311" width="224" height="41"/>
+                                <rect key="frame" x="48.5" y="314" width="224" height="35"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="30"/>
                                 <color key="textColor" red="0.21568627450980393" green="0.27843137254901962" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg2-ww-E0u">
-                                <rect key="frame" x="46" y="392" width="228" height="23.5"/>
+                                <rect key="frame" x="46" y="389" width="228" height="20"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIZ-Nk-00D">
-                                <rect key="frame" x="110" y="372" width="100" height="5"/>
+                                <rect key="frame" x="110" y="369" width="100" height="5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="GEL-95-07y"/>
                                     <constraint firstAttribute="height" constant="5" id="Rfk-2B-B3r"/>
@@ -193,7 +193,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I7Y-Ne-DZv" customClass="UnderLineTextField" customModule="Tendy" customModuleProvider="target">
-                                <rect key="frame" x="39" y="206" width="242" height="24"/>
+                                <rect key="frame" x="39" y="206" width="242" height="20"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -210,7 +210,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLo-N3-mXJ" customClass="UnderLineTextField" customModule="Tendy" customModuleProvider="target">
-                                <rect key="frame" x="39" y="260" width="242" height="24"/>
+                                <rect key="frame" x="39" y="256" width="242" height="20"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -227,7 +227,7 @@
                                 </connections>
                             </textField>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password again" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qxZ-iz-sZF" customClass="UnderLineTextField" customModule="Tendy" customModuleProvider="target">
-                                <rect key="frame" x="39" y="314" width="242" height="24"/>
+                                <rect key="frame" x="39" y="306" width="242" height="20"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -244,7 +244,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJ3-Zh-bNN">
-                                <rect key="frame" x="100" y="314" width="120" height="50"/>
+                                <rect key="frame" x="100" y="306" width="120" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GLU-5o-dES"/>
@@ -266,7 +266,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M69-wd-lYO">
-                                <rect key="frame" x="62" y="368" width="196" height="30"/>
+                                <rect key="frame" x="64.5" y="360" width="191" height="28"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                 <state key="normal" title="don't have an account ? register!">
                                     <color key="titleColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -276,7 +276,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhP-Mr-S3w">
-                                <rect key="frame" x="110" y="390" width="100" height="30"/>
+                                <rect key="frame" x="112.5" y="380" width="95" height="28"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                 <state key="normal" title="forgot password">
                                     <color key="titleColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -286,7 +286,7 @@
                                 </connections>
                             </button>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEr-hu-KjN" customClass="UnderLineTextField" customModule="Tendy" customModuleProvider="target">
-                                <rect key="frame" x="39" y="368" width="242" height="24"/>
+                                <rect key="frame" x="39" y="356" width="242" height="20"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -303,7 +303,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RM-Co-L8a">
-                                <rect key="frame" x="70.5" y="523" width="25" height="25"/>
+                                <rect key="frame" x="73.5" y="523" width="25" height="25"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9RM-Co-L8a" secondAttribute="height" id="3YT-v6-ZYW"/>
@@ -313,13 +313,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="login with facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XtO-JH-gPW">
-                                <rect key="frame" x="95.5" y="523" width="154.5" height="25"/>
+                                <rect key="frame" x="98.5" y="523" width="148.5" height="25"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <color key="textColor" red="0.2552297737" green="0.36727949519999997" blue="0.65957494500000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWF-ek-puK">
-                                <rect key="frame" x="70.5" y="523" width="179.5" height="25"/>
+                                <rect key="frame" x="73.5" y="523" width="173.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="fKl-wk-vQV"/>
                                 </constraints>
@@ -786,13 +786,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4N-x1-NCE">
-                                                    <rect key="frame" x="123" y="45.5" width="177" height="19.5"/>
+                                                    <rect key="frame" x="123" y="47" width="177" height="16.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="14"/>
                                                     <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ee ee f e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AP-it-afg">
-                                                    <rect key="frame" x="123" y="68.5" width="177" height="18"/>
+                                                    <rect key="frame" x="123" y="71" width="177" height="15.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                                     <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -807,7 +807,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ee ee f e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7iA-7p-yU8">
-                                                    <rect key="frame" x="225" y="86.5" width="47.5" height="16.5"/>
+                                                    <rect key="frame" x="226.5" y="88" width="46" height="14"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -992,13 +992,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLD-QS-8ks">
-                                                    <rect key="frame" x="123" y="46" width="177" height="18"/>
+                                                    <rect key="frame" x="123" y="47.5" width="177" height="15.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                                     <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ee ee f e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pe-Ry-X8y">
-                                                    <rect key="frame" x="123" y="68.5" width="177" height="18"/>
+                                                    <rect key="frame" x="123" y="71" width="177" height="15.5"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                                     <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1013,7 +1013,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ee ee f e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YD1-PB-hZ8">
-                                                    <rect key="frame" x="225" y="86" width="47.5" height="16.5"/>
+                                                    <rect key="frame" x="226.5" y="87.5" width="46" height="14"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
                                                     <color key="textColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1184,7 +1184,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Something about me" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7xO-MV-CCd" customClass="UnderLineTextField" customModule="Tendy" customModuleProvider="target">
-                                <rect key="frame" x="39" y="533.5" width="242" height="24"/>
+                                <rect key="frame" x="39" y="521.5" width="242" height="20"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1268,7 +1268,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DOv-do-vis" customClass="UnderLineTextField" customModule="Tendy" customModuleProvider="target">
-                                <rect key="frame" x="39" y="376.5" width="242" height="24.5"/>
+                                <rect key="frame" x="39" y="376.5" width="242" height="20.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -1285,7 +1285,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp9-KU-ZfY">
-                                <rect key="frame" x="29" y="376.5" width="10" height="24.5"/>
+                                <rect key="frame" x="29" y="376.5" width="10" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="10" id="3ev-kA-PUH"/>
                                 </constraints>
@@ -1294,7 +1294,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bv-od-ebm">
-                                <rect key="frame" x="120" y="577.5" width="80" height="40"/>
+                                <rect key="frame" x="120" y="561.5" width="80" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="OgW-Ha-X7N"/>
@@ -1309,7 +1309,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ErQ-ca-qgu" customClass="UnderLineTextField" customModule="Tendy" customModuleProvider="target">
-                                <rect key="frame" x="39" y="429" width="242" height="24"/>
+                                <rect key="frame" x="39" y="425" width="242" height="20"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1458,7 +1458,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Profession" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gQc-BM-1ut" customClass="UnderLineTextField" customModule="Tendy" customModuleProvider="target">
-                                <rect key="frame" x="39" y="481" width="242" height="24.5"/>
+                                <rect key="frame" x="39" y="473" width="242" height="20.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1626,19 +1626,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsd-mq-hVF">
-                                <rect key="frame" x="96" y="192.5" width="5" height="23.5"/>
+                                <rect key="frame" x="96" y="193" width="5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aa@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAq-E9-HrX">
-                                <rect key="frame" x="96" y="221" width="124" height="23.5"/>
+                                <rect key="frame" x="96" y="221.5" width="124" height="23.5"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9Q-xr-9h7" customClass="RoundButton" customModule="Tendy" customModuleProvider="target">
-                                <rect key="frame" x="96" y="60" width="128" height="127.5"/>
+                                <rect key="frame" x="96" y="60" width="115" height="115"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="T9Q-xr-9h7" secondAttribute="height" multiplier="1:1" id="DHT-RO-qd0"/>
                                 </constraints>
@@ -1651,7 +1651,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2sw-av-7j5">
-                                <rect key="frame" x="0.0" y="263" width="320" height="315"/>
+                                <rect key="frame" x="0.0" y="263.5" width="320" height="314.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1745,13 +1745,13 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dl-DR-SoV">
-                                <rect key="frame" x="71" y="192.5" width="17" height="23.5"/>
+                                <rect key="frame" x="71" y="193" width="17" height="23.5"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUm-N7-YkP">
-                                <rect key="frame" x="71" y="221" width="17" height="23.5"/>
+                                <rect key="frame" x="71" y="221.5" width="17" height="23.5"/>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1768,11 +1768,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.21568627450980393" green="0.27843137254901962" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="T9Q-xr-9h7" firstAttribute="centerX" secondItem="bFr-QL-omW" secondAttribute="centerX" id="3XN-Wi-JDp"/>
+                            <constraint firstItem="T9Q-xr-9h7" firstAttribute="centerX" secondItem="bFr-QL-omW" secondAttribute="centerX" constant="-6.5" id="3XN-Wi-JDp"/>
                             <constraint firstItem="2sw-av-7j5" firstAttribute="width" secondItem="bFr-QL-omW" secondAttribute="width" id="809-Hi-L3C"/>
-                            <constraint firstItem="Lsd-mq-hVF" firstAttribute="top" secondItem="T9Q-xr-9h7" secondAttribute="bottom" constant="5" id="B3z-A9-FTr"/>
+                            <constraint firstItem="Lsd-mq-hVF" firstAttribute="top" secondItem="T9Q-xr-9h7" secondAttribute="bottom" constant="18" id="B3z-A9-FTr"/>
                             <constraint firstItem="Lsd-mq-hVF" firstAttribute="leading" secondItem="2dl-DR-SoV" secondAttribute="trailing" constant="8" id="C46-6m-ub6"/>
-                            <constraint firstItem="2sw-av-7j5" firstAttribute="centerX" secondItem="T9Q-xr-9h7" secondAttribute="centerX" id="EVq-zH-fXp"/>
+                            <constraint firstItem="2sw-av-7j5" firstAttribute="centerX" secondItem="T9Q-xr-9h7" secondAttribute="centerX" constant="6.5" id="EVq-zH-fXp"/>
                             <constraint firstItem="1jE-pL-qKj" firstAttribute="bottom" secondItem="2sw-av-7j5" secondAttribute="bottom" constant="-10" id="I2r-eB-srW"/>
                             <constraint firstAttribute="bottomMargin" secondItem="2sw-av-7j5" secondAttribute="bottom" constant="-10" id="J9r-6m-Q3O"/>
                             <constraint firstItem="bAq-E9-HrX" firstAttribute="top" secondItem="Lsd-mq-hVF" secondAttribute="bottom" constant="5" id="Nrj-5q-4ut"/>
@@ -1784,7 +1784,7 @@
                             <constraint firstItem="pUm-N7-YkP" firstAttribute="centerX" secondItem="2dl-DR-SoV" secondAttribute="centerX" id="h6N-O4-Hlg"/>
                             <constraint firstItem="2sw-av-7j5" firstAttribute="top" secondItem="bAq-E9-HrX" secondAttribute="bottom" constant="19" id="lJh-eB-xZJ"/>
                             <constraint firstItem="bAq-E9-HrX" firstAttribute="leading" secondItem="Lsd-mq-hVF" secondAttribute="leading" id="qVe-eM-YVY"/>
-                            <constraint firstItem="T9Q-xr-9h7" firstAttribute="width" secondItem="bFr-QL-omW" secondAttribute="width" multiplier="2/5" id="wqU-jV-EtV"/>
+                            <constraint firstItem="T9Q-xr-9h7" firstAttribute="width" secondItem="bFr-QL-omW" secondAttribute="width" multiplier="2/5" constant="-13" id="wqU-jV-EtV"/>
                             <constraint firstItem="pUm-N7-YkP" firstAttribute="bottom" secondItem="bAq-E9-HrX" secondAttribute="bottom" id="zTt-El-ohH"/>
                         </constraints>
                     </view>
@@ -1904,10 +1904,10 @@
                                 </connections>
                             </textView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KL2-Pv-Wmf">
-                                <rect key="frame" x="0.0" y="104" width="320" height="36"/>
+                                <rect key="frame" x="0.0" y="104" width="320" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fVe-fL-XwF">
-                                        <rect key="frame" x="0.0" y="0.5" width="320" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.5" width="320" height="32"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                         <state key="normal">
@@ -1915,7 +1915,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk7-Nd-nIC">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                         <state key="normal">
@@ -2002,13 +2002,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA5-Rq-zwg">
-                                        <rect key="frame" x="119" y="49" width="166" height="18"/>
+                                        <rect key="frame" x="119" y="50.5" width="166" height="15.5"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUa-qu-FR0">
-                                        <rect key="frame" x="119" y="70" width="166" height="18"/>
+                                        <rect key="frame" x="119" y="72.5" width="166" height="15.5"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2068,13 +2068,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V77-Z9-yLV">
-                                                <rect key="frame" x="79.5" y="44" width="155.5" height="16.5"/>
+                                                <rect key="frame" x="79.5" y="45.5" width="155.5" height="14"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
                                                 <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYV-TK-drQ">
-                                                <rect key="frame" x="79.5" y="61.5" width="155.5" height="16.5"/>
+                                                <rect key="frame" x="79.5" y="64" width="155.5" height="14"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
                                                 <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2128,17 +2128,17 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Bf-ts-kzy" customClass="RoundShadowView" customModule="Tendy" customModuleProvider="target">
-                                                    <rect key="frame" x="27" y="16" width="73" height="58.5"/>
+                                                    <rect key="frame" x="27" y="18" width="73" height="55"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="474-64-FzJ">
-                                                    <rect key="frame" x="30" y="37.5" width="67" height="37.5"/>
+                                                    <rect key="frame" x="30" y="34" width="67" height="41"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBB-nF-Vvt">
-                                                    <rect key="frame" x="30" y="14" width="67" height="23.5"/>
+                                                    <rect key="frame" x="30" y="14" width="67" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="250" id="GxX-vB-QH5"/>
                                                     </constraints>
@@ -2147,7 +2147,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-qM-zE9">
-                                                    <rect key="frame" x="30" y="19" width="67" height="3"/>
+                                                    <rect key="frame" x="30" y="21" width="67" height="3"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="67" id="95t-zl-8P4"/>
                                                         <constraint firstAttribute="height" constant="3" id="ANY-Mh-r8Z"/>
@@ -2188,17 +2188,17 @@
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1g-Tz-D7L">
-                                <rect key="frame" x="45" y="140" width="230" height="182.5"/>
+                                <rect key="frame" x="45" y="136" width="230" height="182.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" translatesAutoresizingMaskIntoConstraints="NO" id="SLZ-fc-1cr">
-                                        <rect key="frame" x="91.5" y="-5" width="47" height="50"/>
+                                        <rect key="frame" x="91.5" y="0.5" width="47" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="8Lk-yI-VDR"/>
                                             <constraint firstAttribute="width" secondItem="SLZ-fc-1cr" secondAttribute="height" multiplier="47:50" id="DQ1-ne-qyw"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מעוניינת לשוחח איתך מעוניינת לשוחח איתךמעוניינת לשוחח איתך" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB5-97-bSf">
-                                        <rect key="frame" x="0.0" y="55" width="230" height="74"/>
+                                        <rect key="frame" x="0.0" y="60.5" width="230" height="63"/>
                                         <color key="backgroundColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2211,7 +2211,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be6-Fq-eJr">
-                                        <rect key="frame" x="73.5" y="139" width="83" height="40"/>
+                                        <rect key="frame" x="73.5" y="133.5" width="83" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Ta2-hG-sVB"/>
@@ -2354,7 +2354,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2S-0w-qKQ">
-                                                <rect key="frame" x="15" y="0.0" width="43" height="54.5"/>
+                                                <rect key="frame" x="15" y="0.0" width="42" height="54.5"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
