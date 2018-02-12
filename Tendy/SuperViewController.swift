@@ -228,7 +228,11 @@ class SuperViewController:ImagePickerViewController,UITextFieldDelegate,UITextVi
     
     //MARK: -CBPeripheralManagerDelegate
     func peripheralManagerDidUpdateState(_ peripheral: CBPeripheralManager){
+        
+        
         P2PKit_Blutooth.sharedInstance.blutoothConnect = peripheral.state == .poweredOn ? true : false
+        
+        
 //        if peripheral.state != .poweredOn{
 //            self.showAlertView(title: "ERROR".localized, msg: "BT", okButtonTitle: "OK".localized, okFunction: {
 //                let url = URL(string: "App-Prefs:root=Bluetooth")

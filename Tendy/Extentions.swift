@@ -735,10 +735,13 @@ extension UIButton
                 let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
                 let data = data, error == nil,
                 
-                let image = UIImage(data: data)
+                var image = UIImage(data: data)
+
                 
                 else { return }
             DispatchQueue.main.async() { () -> Void in
+                image = image.imageResize(sizeChange: self.imageView!.frame.size)
+                
                 self.setImage(image, for: .normal)
                 //self.setBackgroundImage(image, for: .normal)
                 imgesDic[link]=image
@@ -753,7 +756,6 @@ extension UIButton
         self.contentHorizontalAlignment = .fill
         if(imgesDic[link]==nil)
         {
-            
             downloadedFrom(link: link, contentMode: mode,completion: completion)
         }
         else{

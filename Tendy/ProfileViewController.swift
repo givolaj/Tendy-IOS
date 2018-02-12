@@ -19,6 +19,9 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
     var firstRealProfile = false
     var firstProfile = false
     var fromMenu = false
+    
+    
+    @IBOutlet weak var topViewTopSpace: NSLayoutConstraint!
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblChangeImg: UILabel!
@@ -105,7 +108,6 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
             saved=false
             profile.pushToken = ServerController.deviceToken
             profile.deviceType = DeviceTypeEnum.iphone.rawValue
-//            ServerController.saveImgProfie(image: changedImage==true ? imgProfile.image(for: .normal):nil, profile: profile,function: saveReturn)//04/01/2018
             ServerController.saveImgProfie(image: imgProfile.image(for: .normal), profile: profile,function: saveReturn)
             // ServerController.saveImgProfie(image: changedImage==true ? image:nil, profile: profile,function: saveReturn)
         }
@@ -168,9 +170,7 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
     }
     
     override func reavelViewControllerSettings(){
-        //        let btnIcon = AppDelegate.isRTL ? FontAwesome.chevronRight : FontAwesome.chevronLeft
-        //        (profile is RealProfile) ? leftBarBtn(fontAwesome: btnIcon , actionStr: "back"): super.reavelViewControllerSettings()
-        
+
         let btnIcon = AppDelegate.isRTL ? FontAwesome.chevronRight : FontAwesome.chevronLeft
         (profile is RealProfile) ? leftBarBtn(fontAwesome: btnIcon , actionStr: "back"): firstProfile ? setMainNavigation() : super.reavelViewControllerSettings()
     }
@@ -190,24 +190,6 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
         DispatchQueue.main.async(execute: {
             self.dismiss(animated: false, completion: nil)
         })
-        //        let transition = CATransition()
-        //        transition.duration = 0.5
-        //        transition.type = kCATransitionPush
-        //        transition.subtype = kCATransitionFromLeft
-        //        view.window!.layer.add(transition, forKey: kCATransition)
-        
-        
-        //        let transition = CATransition()
-        //        transition.duration = 0.5
-        //        transition.type = kCATransitionPush
-        //        transition.subtype = kCATransitionFromLeft
-        //        view.window!.layer.add(transition, forKey: kCATransition)
-        //        self.dismiss(animated: false, completion: nil)
-        
-        
-        
-        //        ServerController.appDelegate.returnToMain()
-        //        print("")
     }
     
     override func saveImgUrl(_ tag: Int ){
@@ -224,12 +206,11 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
     
     override func viewDidLoad() {
         viewAboveReveal = viewReveal
-        //self.view.bringSubview(toFront: viewReveal)
         firstProfile = ServerController.currentMainProfile == nil ? true : false
         
         super.viewDidLoad()
         self.tabBarController?.delegate=self
-        self.navigationController?.isNavigationBarHidden=false
+        self.navigationController?.isNavigationBarHidden = false
         btnMan.tag=Gender.man.rawValue
         btnWoman.tag=Gender.woman.rawValue
         btnOther.tag=Gender.other.rawValue
@@ -238,14 +219,8 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
         btnBack.textFontAwesome(btnIcon)
         conHeightSecond.constant = 0
         
-        self.navigationController?.isNavigationBarHidden=false
+        self.navigationController?.isNavigationBarHidden = false
         firstRealProfile == false ? setProfile() : setFirstRealProfile()
-        //        ServerController.setInternentListiner {
-        //            self.showAlertViewNoInternent()
-        //        }
-        //        if let profile = (profile is RealProfile) ? ServerController.currentMainProfile : ServerController.currentPrivateProfile{
-        //            self.profile = profile
-        //        }
         
         if DeviceType.IS_IPAD {
             setIpadConstrains()
@@ -348,7 +323,7 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
             //image = (btnMan.isSelected==true) ? manImage : womanImage
             image = (btnWoman.isSelected==true) ? womanImage : manImage
             imgProfile.setImage(image, for: .normal)
-            //imgProfile.setBackgroundImage(image,for:.normal)
+            
         }
     }
     
@@ -382,8 +357,7 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
         datePicker.date = someDateTime!
         txtFldAge.inputAccessoryView = toolbarDatePicker
         txtFldAge.inputView = datePicker
-        //imgProfile.setBackgroundImage(#imageLiteral(resourceName: "default_profile_image"), for: .normal)
-//        topBackBlackConst.constant=0//11/12/17
+ 
         profile.username=(Auth.auth().currentUser?.displayName) != nil ? (Auth.auth().currentUser?.displayName)! : ""
         txtFldName.text = profile.username
         changedImage=true
@@ -399,8 +373,7 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
             // image=manImage
         }else{
             imgProfile.setImage(#imageLiteral(resourceName: "default_profile_image"), for: .normal)
-            //            image=manImage
-            //  imgProfile.setBackgroundImage(#imageLiteral(resourceName: "default_profile_image"), for: .normal)
+
         }
         image=manImage
         setRealProfileLocalizedStrings()
@@ -445,7 +418,7 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
                     changedImage=true
                     image = (btnWoman.isSelected==true) ? womanImage : manImage
                     imgProfile.setImage(image,for:.normal)
-                    //imgProfile.setBackgroundImage(image,for:.normal)
+       
                 }else{//11/12/17
                     btnOther.isSelected=true
                 }
@@ -514,7 +487,7 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
                 changedImage=true
                 image = (btnWoman.isSelected==true) ? womanImage : manImage
                 imgProfile.setImage(image,for:.normal)
-                //imgProfile.setBackgroundImage(image,for:.normal)
+
             }else{
                 setFirstRealProfile()
             }
@@ -524,7 +497,7 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
     func setCurrentRealProfile(){
         conHeightSecond.constant = /*80*/0//לגירסה של אפל
         imgProfile.setImage(#imageLiteral(resourceName: "default_profile_image"), for: .normal)
-        //imgProfile.setBackgroundImage(#imageLiteral(resourceName: "default_profile_image"), for: .normal)
+
         ServerController.getRealCurrentProfile(function: serverReturn)
         //topBackBlackConst.constant=0
         setRealProfileLocalizedStrings()
@@ -564,8 +537,10 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
         txtFldAboutMe.text=profile.something
         txtFldAge.text=profile.age
         txtFldProfession.text=profile.profession
-        imgProfile.setImgwithUrl(profile.imageUrl)
-        //imgProfile.setImgwithUrl(profile.imageUrl, contentMode: .scaleToFill)
+//        let imgUrl = profile.imageUrl
+//        imgProfile.setImgwithUrl(profile.imageUrl)
+        imgProfile.setImgwithUrl(profile.imageUrl, contentMode: .center)
+
         setBtnsGender()
     }
     
@@ -601,27 +576,13 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
     var toJump:CGFloat = 0
     func tabBarY(){
         if(view.frame.origin.y==0 && fromMenu == false){
-            let y=(self.navigationController?.navigationBar.frame.size.height)!+UIApplication.shared.statusBarFrame.height
-            self.tabBarController?.tabBar.frame.origin.y=y
+            let y = (self.navigationController?.navigationBar.frame.size.height)!+UIApplication.shared.statusBarFrame.height
+            self.tabBarController?.tabBar.frame.origin.y = y
             self.tabBarController?.tabBar.frame.size.height = 80
+            
+//            self.topViewTopSpace.constant = 100
         }else if fromMenu == true{
-            //            if view.frame.origin.y<0{
-            //            self.view!.frame = CGRect(x: self.view!.frame.origin.x, y: view.frame.origin.y*2, width: self.view!.frame.size.width, height: self.view!.frame.size.height)
-            //            }
-            
-            
-            //            if view.frame.origin.y==0{
-            //                jumpView = false
-            //                toJump = 0
-            //            }else if view.frame.origin.y<0{
-            //                if jumpView == false{
-            //                jumpView = true
-            //                toJump = view.frame.origin.y
-            //                self.view!.frame = CGRect(x: self.view!.frame.origin.x, y: view.frame.origin.y*2, width: self.view!.frame.size.width, height: self.view!.frame.size.height)
-            //                }else{
-            //                   self.view!.frame = CGRect(x: self.view!.frame.origin.x, y: view.frame.origin.y+toJump, width: self.view!.frame.size.width, height: self.view!.frame.size.height)
-            //                }
-            //            }
+
         }
     }
     

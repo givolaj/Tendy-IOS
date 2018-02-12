@@ -44,8 +44,7 @@ class SuperRevealViewController: SuperViewController,SWRevealViewControllerDeleg
            self.revealViewController().rearViewRevealWidth = UIScreen.main.bounds.size.width - 100
         }
         revealViewController().delegate=self
-        //viewAboveReveal?.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        //viewAboveReveal?.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         
@@ -95,21 +94,6 @@ class SuperRevealViewController: SuperViewController,SWRevealViewControllerDeleg
                 }
             }
         }
-//        if (position == FrontViewPosition.right) {
-//            viewAboveReveal.isHidden = false
-//            self.view.bringSubview(toFront: viewAboveReveal)
-//            if let tabBarController = self.revealViewController().frontViewController as? UITabBarController{
-//                tabBarController.tabBar.isUserInteractionEnabled = false
-//            }
-//        }
-//        else if (position == FrontViewPosition.left){
-//            viewAboveReveal.isHidden = true
-//            if self.revealViewController() != nil{
-//                if let tabBarController = self.revealViewController().frontViewController as? UITabBarController{
-//                    tabBarController.tabBar.isUserInteractionEnabled = true
-//                }
-//            }
-//        }
     }
     
     

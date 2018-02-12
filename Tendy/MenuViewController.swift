@@ -168,14 +168,9 @@ class MenuViewController: SuperViewController ,UITableViewDelegate,UITableViewDa
             let profileVC = mainStoryboard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
             profileVC.fromMenu = true
             profileVC.profile=RealProfile()
-//            let transition = CATransition()
-//            transition.duration = 0.5
-//            transition.type = kCATransitionPush
-//            transition.subtype = kCATransitionFromRight
-//            view.window!.layer.add(transition, forKey: kCATransition)
+
             self.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
             self.present(profileVC, animated: false, completion: nil)
-            //performSegue(withIdentifier: C.Segue.RealProfileSegue, sender: nil)
             })
         }
     }

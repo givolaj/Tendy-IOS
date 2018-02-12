@@ -23,6 +23,7 @@ class CustomTabBarController: UITabBarController {
         let h:CGFloat = 80
         
         let y:CGFloat = 64
+//        let y:CGFloat = UIScreen.main.bounds.size.height - h
         tabBarFrame = CGRect(x: 0, y: y, width: UIScreen.main.bounds.size.width, height: h)
         //        self.tabBarController?.tabBar.frame = CGRect(x: 0, y: y, width: UIScreen.main.bounds.size.width, height: h!)
 
