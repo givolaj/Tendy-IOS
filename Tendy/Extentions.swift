@@ -283,6 +283,32 @@ extension UIViewController
         alertController.show()
         //UIApplication.shared.keyWindow?.rootViewController!.present(alertController, animated: false, completion: nil)
     }
+    
+    
+    
+    func showAlertWith(title: String,
+                       message : String,
+                       buttons: [String],
+                       completion: @escaping (_ result: Int) -> Void) {
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        
+        for buttonTitle in buttons {
+            let action = UIAlertAction(title: buttonTitle, style: .default) {
+                (action: UIAlertAction) in
+                //                completion(index)
+                if let alertIndex = alertController.actions.index(of: action) {
+                    completion(alertIndex)
+                }
+            }
+            alertController.addAction(action)
+        }
+        
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
 }
 
 extension UIImage

@@ -23,6 +23,7 @@ class P2PKit_Blutooth :NSObject, PPKControllerDelegate{
     
     var blutoothConnect = false
     var blutoothAlertShow = false
+    var isShowedBlutoothAlert = false//dont show alet more then once
     
     func firstEnable(){
         if !PPKController.isEnabled(){
@@ -36,14 +37,22 @@ class P2PKit_Blutooth :NSObject, PPKControllerDelegate{
                 PPKController.enable(withConfiguration: "16321ccfa0254c2b87d5f2673f386eee", observer: self)
             }
         }else{
-            if blutoothAlertShow == false{
+            if blutoothAlertShow == false && isShowedBlutoothAlert == false{
                 blutoothAlertShow = true
-                UIApplication.topViewController()?.showAlertView(title: "ERROR".localized, msg: "Turn on the Blutooth".localized, okButtonTitle: "OK".localized, okFunction: {
-                    self.blutoothAlertShow = false
-                    let url = URL(string: "App-Prefs:root=Bluetooth")
-                    let app = UIApplication.shared
-                    app.openURL(url!)
+                isShowedBlutoothAlert = true
+                UIApplication.topViewController()?.showAlertWith(title: "ERROR".localized, message: "Turn on the Blutooth".localized, buttons: ["OK".localized,"Cancel".localized], completion: { (btnNum) in
+                    if btnNum == 0{
+                        self.blutoothAlertShow = false
+                        let url = URL(string: "App-Prefs:root=Bluetooth")
+                        let app = UIApplication.shared
+                        app.openURL(url!)
+                    }else if btnNum == 1{
+                        self.blutoothAlertShow = false
+                    }
                 })
+                
+                
+                
             }
         }
     }

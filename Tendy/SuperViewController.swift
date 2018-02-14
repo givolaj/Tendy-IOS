@@ -232,41 +232,5 @@ class SuperViewController:ImagePickerViewController,UITextFieldDelegate,UITextVi
         
         P2PKit_Blutooth.sharedInstance.blutoothConnect = peripheral.state == .poweredOn ? true : false
         
-        
-//        if peripheral.state != .poweredOn{
-//            self.showAlertView(title: "ERROR".localized, msg: "BT", okButtonTitle: "OK".localized, okFunction: {
-//                let url = URL(string: "App-Prefs:root=Bluetooth")
-//                let app = UIApplication.shared
-//                app.openURL(url!)
-//            })
-//        }
-//        var statusMessage = ""
-//
-//        switch peripheral.state {
-//        case .poweredOn:
-//            statusMessage = "Bluetooth Status: Turned On"
-//            
-//        case .poweredOff:
-//            statusMessage = "Bluetooth Status: Turned Off"
-//            
-//        case .resetting:
-//            statusMessage = "Bluetooth Status: Resetting"
-//            
-//        case .unauthorized:
-//            statusMessage = "Bluetooth Status: Not Authorized"
-//            
-//        case .unsupported:
-//            statusMessage = "Bluetooth Status: Not Supported"
-//            
-//        default:
-//            statusMessage = "Bluetooth Status: Unknown"
-//        }
-//        
-//        print(statusMessage)
-
-      //  [btManager setPowered:YES];
-//        if peripheral.state == CBPeripheralManagerState.poweredOff {
-//            //TODO: Update this property in an App Manager class
-//        }
     }
 }
