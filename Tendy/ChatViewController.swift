@@ -140,16 +140,12 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
     
     override func setviewUp(_ kbSize: CGFloat) {
 
-        //        navigationViewHeight = (self.view!.frame.size.height)*0.2 - (self.view!.frame.size.height-kbSize)*0.2
         navigationViewHeight = (viewHeight)*0.2 - (viewHeight-kbSize)*0.2
         
-        //UIView.animate(withDuration: 1) {
-        //        self.view!.frame = CGRect(x: self.view!.frame.origin.x, y: 0, width: self.view!.frame.size.width, height: self.view!.frame.size.height-kbSize)
          viewCurrentFrame = CGRect(x: self.view!.frame.origin.x, y: 0, width: self.view!.frame.size.width, height: viewHeight-kbSize)
         self.view!.frame = viewCurrentFrame
         self.heightNavigationViewCons.constant = self.navigationViewHeight
-        //    }
-        // UIView.commitAnimations()
+
         
         tblMenu.isHidden=true
         //  topConst.constant=kbSize
@@ -174,13 +170,7 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
         viewCurrentFrame = CGRect(x: self.view!.frame.origin.x, y: 0, width: self.view!.frame.size.width, height: self.view!.frame.size.height+kbSize.height)
         self.view!.frame = viewCurrentFrame
         isKeyboardOpen = false
-        //topHelperViewConst.constant = 0
-        
-        ////        bottomConst.constant = -20
-        //
-        //        self.view!.frame = CGRect(x: self.view!.frame.origin.x, y: topY, width: self.view!.frame.size.width, height: self.view!.frame.size.height)
-        //      //  topConst.constant=constTop
-        //        topNavConst.constant=0
+
     }
     
     func addTapHideKeyboard(){
@@ -247,16 +237,12 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        // tblMenu.frame=CGRect(x: 0, y: navigationView.frame.size.height, width: 200, height: 50*3)
         
         tblMenu.frame=CGRect(x: AppDelegate.isRTL == true ? 0 : screenWidth - 200, y: btnMenu.frame.origin.y + btnMenu.frame.size.height + 5, width: 200, height: 50*3)
     }
     
         override func viewWillAppear(_ animated: Bool) {
             getPatner()
-//            self.hidesBottomBarWhenPushed = true
-//            self.navigationController?.isNavigationBarHidden=true
-          //  self.navigationController?.isNavigationBarHidden=true
         }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -268,16 +254,9 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
             self.partnerRef.removeAllObservers()
         }
         
-        //  let height: CGFloat = 0 //whatever height you want
-        //  let bounds = self.navigationController!.navigationBar.bounds
-        // self.navigationController?.navigationBar.frame = CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height + height)
-        // self.tabBarController?.tabBar.isHidden=false
-        //self.navigationController?.hidesBottomBarWhenPushed = false
         self.hidesBottomBarWhenPushed = false
         self.navigationController?.isNavigationBarHidden=false
-        //        if let tabBarController = self.tabBarController as? CustomTabBarController{
-        //            tabBarController.setTabBarFrame()
-        //        }
+
     }
     
     
@@ -299,12 +278,7 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
         tblMenu.isScrollEnabled = false
         
         tblMenu.shadow()
-        //        tblMenu.layer.shadowOffset = CGSize(width:0,height: 0)
-        //        tblMenu.layer.shadowColor = UIColor.darkGray.cgColor
-        //        tblMenu.layer.shadowRadius = 4
-        //        tblMenu.layer.shadowOpacity = 1
-        //        tblMenu.layer.masksToBounds = false
-        //        tblMenu.clipsToBounds = false
+
     }
     
     func back(){
@@ -368,11 +342,6 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
         let btnIcon = AppDelegate.isRTL ? FontAwesome.chevronRight : FontAwesome.chevronLeft
         btnBack.textFontAwesome(btnIcon)
         btnBack.setTitleColor(UIColor.white, for: .normal)
-        //  btnMenu.textFontAwesome(.plus)
-        // btnMenu.setImage(UIImage(named: "more-18"), for: .normal)
-        //  btnMenu.setBackgroundImage(UIImage(named: "more-18"), for: .normal)
-        
-        //rightBarBtn(fontAwesome: .plus , actionStr: "menu")
         txtVMessage.border(UIColor.exGreen)
         txtVMessage.cornerRadius()
         txtVMessage.shadow()
@@ -387,7 +356,8 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
         tblList.rowHeight = UITableViewAutomaticDimension
         tblList.estimatedRowHeight = 20
         tblList.backgroundColor=UIColor.clear
-        tblMenu.rowHeight=50
+        tblMenu.rowHeight = 50
+//        tblMenu.rowHeight = 150
         tblMenu.tag=tblMenuTag
         self.view.addSubview(tblMenu)
     }
@@ -793,48 +763,11 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
                 self.partnerChatPartner = ChatPartners(dic:dic)
                 self.myProfileInPartner = self.partnerChatPartner
             })
-            
-            //שולח הודעה א שתף אותך בפרופיל הפרטי שלו
-//            let chat=Chat()
-//            chat.sender=ServerController.currentUserId
-//            chat.text = self.partnerChatPartner?.profile.gender == "woman" ? "\"\(lastName)\" \("FemaleSharingPrivateProfile".localized)" : "\"\(lastName)\" \("MaleSharingPrivateProfile".localized)"
-//            ServerController.saveImgChat(image: nil , chat: chat, buddy: self.self.member.identifier, function: { (error, dic) in
-//                self.hideNativeActivityIndicator()
-//                super.saveReturn(error, ref,false)
-//            })
-//
-            //שולח את התמונה של הפרופיל...
-//            if image != nil{
-//                self.image = image!
-//                self.changedImage=true
-//                let chat =  self.crateChat()
-//                self.showNativeActivityIndicator()
-//                ServerController.saveImgChat(image: image , chat: chat, buddy: self.self.member.identifier, function: { (error, dic) in
-//                    self.hideNativeActivityIndicator()
-//                    super.saveReturn(error, ref,false)
-//                })
-//            }
         }
     }
     
     func  serverReturnRealProfile(dicPrivateProfile: [String : AnyObject]?,error:Error?){
-        //let privateProfile = RealProfile( dic: dicPrivateProfile)
-        /*
-    //    if (self.partnerChatPartner == nil || self.partnerChatPartner?.realProfile==false){
-            ServerController.getChatPartnerStateAndProfile(id: self.member.identifier, function:  { (dic:[String : AnyObject]?, error:Error?) in
-                self.partnerChatPartner = ChatPartners(dic:dic)
-               // if(self.partnerChatPartner?.realProfile==false){
-                    let privateProfile = RealProfile( dic: dicPrivateProfile)
-                    //ServerController.currentPrivateProfile=privateProfile
-                    if(privateProfile.identifier != ""){
-                        self.showAlertPrivateProfile()
-                    }
-                    else{
-                        self.showAlertView("אין לך פרופיל פרטי....")
-                    }
-                //}
-            })
- */
+
     }
     
     func displayPrivateProfileToPartner(){

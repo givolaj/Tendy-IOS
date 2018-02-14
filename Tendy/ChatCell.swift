@@ -53,6 +53,7 @@ class ChatCell: UITableViewCell {
     func leading()
     {
         leadingConstraint = NSLayoutConstraint(item: imgBackGround, attribute: NSLayoutAttribute.leading, relatedBy: NSLayoutRelation.equal, toItem: self, attribute: NSLayoutAttribute.leading, multiplier: 1, constant: 4)
+        
         leadingConstraint.isActive=true
         self.addConstraint(leadingConstraint!)
     }
@@ -91,7 +92,8 @@ class ChatCell: UITableViewCell {
         img.setImgwithUrl(chat.imageUrl, toSave: true,imageName:chat.key)
         //img.setImgwithUrl(chat.imageUrl, contentMode: .scaleToFill)
        // hImgConst.constant =  (chat.imageUrl != "") ? 100:3
-        hImgConst.constant =  (chat.imageUrl != "") ? 150:3
+//        hImgConst.constant =  (chat.imageUrl != "") ? 150:3
+        hImgConst.constant =  (chat.imageUrl != "") ? 230:3
         wImgConst.constant=hImgConst.constant
         
         

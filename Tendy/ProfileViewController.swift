@@ -561,8 +561,7 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
     
     override func setviewUp(_ animYhight: CGFloat) {
         super.setviewUp(animYhight)
-        //        let y=(self.navigationController?.navigationBar.frame.size.height)!+UIApplication.shared.statusBarFrame.height+self.view.frame.origin.y
-        //        self.tabBarController?.tabBar.frame.origin.y=y
+
     }
     
     override   func keyboardWillHide(_ notification: Notification) {
@@ -596,14 +595,6 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
         dateFormatter.dateFormat = "dd/MM/YYYY"
         txtFldAge.text = "\(dateFormatter.string(from: datePicker.date))"
     }
-    
-    //    override func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-    //        let resault = super.textFieldShouldReturn(textField)
-    //        if textField == txtFldAge
-    //       // textField.textAlignment = textField.textAlignment == NSTextAlignment.center ? .center : AppDelegate.isRTL == true ? .right : .left
-    //        //currentTxtFldEditing?.textAlignment = NSTextAlignment.right
-    //        return true
-    //    }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if !firstRealProfile && textField == txtFldAge{
