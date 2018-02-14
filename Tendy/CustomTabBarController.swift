@@ -22,20 +22,16 @@ class CustomTabBarController: UITabBarController {
        // let h = self.tabBar.frame.size.height
         let h:CGFloat = 80
         
-        let y:CGFloat = 64
-//        let y:CGFloat = UIScreen.main.bounds.size.height - h
+        var y:CGFloat = 64
+        let height = UIScreen.main.bounds.size.height
+        if (height == 812.0){
+            y = 84
+        }
         tabBarFrame = CGRect(x: 0, y: y, width: UIScreen.main.bounds.size.width, height: h)
-        //        self.tabBarController?.tabBar.frame = CGRect(x: 0, y: y, width: UIScreen.main.bounds.size.width, height: h!)
 
-//        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white,
-//                                                                        NSFontAttributeName: UIFont(name: "Arial-BoldMT", size: 20)!]
-//        self.title = "EasyKal"
         self.tabBar.items?[0].title = "Profile".localized
         self.tabBar.items?[1].title = "Chats".localized
         self.tabBar.items?[2].title = "Discovery".localized
-//        self.tabBar.items?[3].title = NSLocalizedString("Settings", comment: "Settings")
-
-        // Do any additional setup after loading the view.
     }
     
     func setTabBarFrame(){
