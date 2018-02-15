@@ -229,6 +229,9 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
             lblNameDisplayForPartner.font = lblNameDisplayForPartner.font.withSize(14)
             btnTimerText.titleLabel?.font = btnTimerText.titleLabel?.font.withSize(14)
         }
+        
+        
+        btnOkEnable.layer.cornerRadius = 20
     }
     
     override func didReceiveMemoryWarning() {

@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import PhoneNumberKit
 
 class PhoneVerificationViewController: SuperViewController {
     
@@ -38,17 +39,22 @@ class PhoneVerificationViewController: SuperViewController {
     
     func sendCode(){
         var phone  = self.txtPhone.text!
-        if phone.characters.count != 10{
-             self.showAlertView(title:"Problem".localized,"Invalide phone".localized)
+        let isPhoneNum:Bool = PhoneFormatterKit.shared.isPhoneNumber(phone)
+        if isPhoneNum == false{
+            self.showAlertView(title:"Problem".localized,"Invalide phone".localized)
             return
         }
-        phone.remove(at: phone.startIndex)
-        phone = "+972" + phone
+        
+        
+        phone = PhoneFormatterKit.shared.formatE164(phone)
         self.showNativeActivityIndicator()
         PhoneAuthProvider.provider().verifyPhoneNumber(phone) { (verificationID, error) in
             if let error = error {
                 self.hideNativeActivityIndicator()
-//                self.showAlertView(title:"ERROR".localized,error.localizedDescription)
+//            Code=17048 
+                if error.localizedDescription == "Token mismatch,"{
+                    print("Token mismatch apns dont match happen when register from dev certificate, work well in prudaction")
+                }
                 self.showAlertView(title:"ERROR".localized,"TryLater".localized)
                 return
             }else{
@@ -112,10 +118,6 @@ class PhoneVerificationViewController: SuperViewController {
         backBarBtn()
         btnEnterCode.titleLabel!.textAlignment = .center
         btnSend.round()
-        // txtPhone.text = "0585612178"//אילה
-        //txtPhone.text = "0529647147"//iphone5
-        //txtPhone.text = "0503371563"//iphone6+
-        // Do any additional setup after loading the view.
         setLocalizedStrings()
     }
     
@@ -123,6 +125,9 @@ class PhoneVerificationViewController: SuperViewController {
         self.title="Phone Verification".localized
         lblTitle.text = "Verification title".localized
         txtPhone.placeholder = "Enter your phone number".localized
+        txtPhone.layer.backgroundColor = UIColor.clear.cgColor
+        
+        
         btnSend.setTitle("SEND MESSAGE".localized, for: .normal)
         btnEnterCode.setTitle("Enter code title".localized, for: .normal)
     }

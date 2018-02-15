@@ -18,6 +18,7 @@ pod 'p2pkit'
 pod 'FBSDKCoreKit', '~> 4.26'
 pod 'FBSDKLoginKit', '~> 4.26'
 pod 'Alamofire', '~> 4.4'
+pod 'PhoneNumberKit'
 # Pods for Tendy
 
   target 'TendyTests' do

@@ -580,12 +580,13 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="טנדי תשלח הודעת SMS לוודא את מספר הטלפון שלך. הכנס את מספר הטלפון שלך כאן:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwK-Ai-RSY">
                                 <rect key="frame" x="32" y="0.0" width="256" height="151"/>
-                                <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="הזן מספר טלפון" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vgr-GG-6SA" customClass="UnderLineTextField" customModule="Tendy" customModuleProvider="target">
                                 <rect key="frame" x="32" y="151" width="256" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="IqZ-da-Vza"/>
                                 </constraints>
@@ -602,10 +603,10 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW6-Wu-zNf">
-                                <rect key="frame" x="95" y="206" width="130" height="45"/>
+                                <rect key="frame" x="72" y="206" width="177" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="95h-LC-f7p"/>
+                                    <constraint firstAttribute="width" constant="177" id="95h-LC-f7p"/>
                                     <constraint firstAttribute="height" constant="45" id="PEz-Di-4my"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="17"/>
@@ -630,12 +631,22 @@
                                     <action selector="tapEnterCode:" destination="QVC-BG-Aey" eventType="touchUpInside" id="kem-X0-nwQ"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1t-cd-UEr">
+                                <rect key="frame" x="28" y="191" width="256" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qbW-2w-2us"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cwK-Ai-RSY" firstAttribute="width" secondItem="4kL-Cb-jIb" secondAttribute="width" multiplier="0.8" id="4nV-HG-Xy6"/>
+                            <constraint firstItem="W1t-cd-UEr" firstAttribute="centerX" secondItem="XtR-Yn-luk" secondAttribute="centerX" constant="-4" id="67S-Rz-SJu"/>
                             <constraint firstItem="4kL-Cb-jIb" firstAttribute="top" secondItem="AMx-e7-hD4" secondAttribute="bottom" id="Ais-sN-eEg"/>
+                            <constraint firstItem="W1t-cd-UEr" firstAttribute="top" secondItem="vgr-GG-6SA" secondAttribute="bottom" constant="5" id="Dq9-y1-1jf"/>
                             <constraint firstItem="cwK-Ai-RSY" firstAttribute="centerX" secondItem="4kL-Cb-jIb" secondAttribute="centerX" id="KV0-GD-bpR"/>
+                            <constraint firstItem="W1t-cd-UEr" firstAttribute="width" secondItem="vgr-GG-6SA" secondAttribute="width" id="Srt-Sv-IkP"/>
                             <constraint firstItem="vgr-GG-6SA" firstAttribute="width" secondItem="cwK-Ai-RSY" secondAttribute="width" id="Td1-0b-KgO"/>
                             <constraint firstItem="4kL-Cb-jIb" firstAttribute="leading" secondItem="XtR-Yn-luk" secondAttribute="leading" id="Vys-d6-ZVz"/>
                             <constraint firstItem="Idl-XI-pAo" firstAttribute="top" secondItem="4kL-Cb-jIb" secondAttribute="bottom" id="Z6v-lB-gfw"/>
@@ -2020,7 +2031,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA5-Rq-zwg">
-                                        <rect key="frame" x="119" y="48.5" width="166" height="18"/>
+                                        <rect key="frame" x="119" y="49" width="166" height="18"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2086,7 +2097,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V77-Z9-yLV">
-                                                <rect key="frame" x="79.5" y="44.5" width="155.5" height="16.5"/>
+                                                <rect key="frame" x="79.5" y="44" width="155.5" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
                                                 <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2209,15 +2220,18 @@
                                 <rect key="frame" x="45" y="140" width="230" height="182.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" translatesAutoresizingMaskIntoConstraints="NO" id="SLZ-fc-1cr">
-                                        <rect key="frame" x="91.5" y="-5" width="47" height="50"/>
+                                        <rect key="frame" x="91.5" y="-5.5" width="47" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="8Lk-yI-VDR"/>
                                             <constraint firstAttribute="width" secondItem="SLZ-fc-1cr" secondAttribute="height" multiplier="47:50" id="DQ1-ne-qyw"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מעוניינת לשוחח איתך מעוניינת לשוחח איתךמעוניינת לשוחח איתך" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB5-97-bSf">
-                                        <rect key="frame" x="0.0" y="55" width="230" height="74"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="מעוניינת לשוחח איתך מעוניינת לשוחח איתךמעוניינת לשוחח איתך" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB5-97-bSf">
+                                        <rect key="frame" x="0.0" y="54.5" width="230" height="74"/>
                                         <color key="backgroundColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="74" id="lKg-tq-u9n"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2229,7 +2243,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="be6-Fq-eJr">
-                                        <rect key="frame" x="73.5" y="139" width="83" height="40"/>
+                                        <rect key="frame" x="73.5" y="138.5" width="83" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Ta2-hG-sVB"/>
