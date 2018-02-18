@@ -962,7 +962,7 @@
                                 <rect key="frame" x="0.0" y="80" width="375" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="ListCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="110" id="H73-3s-tjq" customClass="ListCell" customModule="Tendy" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ListCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCell" rowHeight="110" id="H73-3s-tjq" customClass="ListCell" customModule="Tendy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H73-3s-tjq" id="Q4U-1O-cbP">
@@ -986,28 +986,31 @@
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBW-af-MJ1">
-                                                    <rect key="frame" x="123" y="18.666666666666668" width="232" height="25.000000000000004"/>
+                                                    <rect key="frame" x="128" y="18.666666666666668" width="227" height="25.000000000000004"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="18"/>
                                                     <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLD-QS-8ks">
-                                                    <rect key="frame" x="123" y="46.666666666666664" width="232" height="17.999999999999993"/>
+                                                    <rect key="frame" x="128" y="46.666666666666664" width="227" height="17.999999999999993"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                                     <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ee ee f e" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pe-Ry-X8y">
-                                                    <rect key="frame" x="123" y="68.666666666666671" width="232" height="18"/>
+                                                    <rect key="frame" x="128" y="68.666666666666671" width="227" height="18"/>
                                                     <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                                     <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIs-cG-N4O">
-                                                    <rect key="frame" x="123" y="86" width="0.0" height="16.666666666666671"/>
+                                                    <rect key="frame" x="128" y="86" width="0.0" height="16.666666666666671"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16.5" id="weK-2F-eb7"/>
                                                     </constraints>
@@ -1045,7 +1048,7 @@
                                                 <constraint firstItem="gBW-af-MJ1" firstAttribute="top" secondItem="Eht-6v-HRu" secondAttribute="top" id="LJB-kk-8yg"/>
                                                 <constraint firstItem="YD1-PB-hZ8" firstAttribute="centerY" secondItem="wIs-cG-N4O" secondAttribute="centerY" id="Pzv-hW-Mdg"/>
                                                 <constraint firstItem="pzE-Ky-t6E" firstAttribute="leading" secondItem="Eht-6v-HRu" secondAttribute="trailing" constant="-14" id="Y50-a9-XYb"/>
-                                                <constraint firstItem="gBW-af-MJ1" firstAttribute="leading" secondItem="Eht-6v-HRu" secondAttribute="trailing" constant="20" id="aOX-dd-Ezb"/>
+                                                <constraint firstItem="gBW-af-MJ1" firstAttribute="leading" secondItem="Eht-6v-HRu" secondAttribute="trailing" constant="25" id="aOX-dd-Ezb"/>
                                                 <constraint firstItem="2Pe-Ry-X8y" firstAttribute="leading" secondItem="sLD-QS-8ks" secondAttribute="leading" id="bXl-yB-bsa"/>
                                                 <constraint firstItem="pzE-Ky-t6E" firstAttribute="height" secondItem="Eht-6v-HRu" secondAttribute="height" multiplier="25:59" id="fbm-n4-7nB"/>
                                                 <constraint firstItem="Eht-6v-HRu" firstAttribute="leading" secondItem="Q4U-1O-cbP" secondAttribute="leadingMargin" constant="15" id="jtF-aR-seW"/>
@@ -1143,7 +1146,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="Asset 6 (1)" id="Hu2-og-jVd">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-10"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleAspectFill" translucent="NO" id="NFu-f6-Xdq">
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFit" translucent="NO" id="NFu-f6-Xdq">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.56470588239999997" green="0.64313725489999995" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -1512,13 +1515,13 @@
                                         <color key="textColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgB-sG-QPt" customClass="RoundButton" customModule="Tendy" customModuleProvider="target">
+                                    <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QgB-sG-QPt" customClass="RoundButton" customModule="Tendy" customModuleProvider="target">
                                         <rect key="frame" x="141.66666666666666" y="26" width="90" height="90"/>
                                         <state key="normal" image="default_profile_image"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -1675,7 +1678,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -1906,7 +1909,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idF-a0-HzK">
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="idF-a0-HzK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -2015,35 +2018,38 @@
                                             <action selector="btnBackClick:" destination="NL2-HC-4IR" eventType="touchUpInside" id="OwD-pP-iC9"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asset 11" translatesAutoresizingMaskIntoConstraints="NO" id="s3W-9k-0ed" customClass="RoundImageView" customModule="Tendy" customModuleProvider="target">
-                                        <rect key="frame" x="50" y="26.666666666666668" width="61.666666666666657" height="61.333333333333329"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Asset 11" translatesAutoresizingMaskIntoConstraints="NO" id="s3W-9k-0ed" customClass="RoundImageView" customModule="Tendy" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="25.999999999999996" width="62.666666666666657" height="62.666666666666657"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="s3W-9k-0ed" secondAttribute="height" multiplier="1:1" id="cjC-ek-huU"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlh-dI-nou">
-                                        <rect key="frame" x="50" y="26.666666666666668" width="61.666666666666657" height="61.333333333333329"/>
+                                        <rect key="frame" x="50" y="25.999999999999996" width="62.666666666666657" height="62.666666666666657"/>
                                         <connections>
                                             <action selector="btnShowPartnerProfileClick:" destination="NL2-HC-4IR" eventType="touchUpInside" id="mOe-a8-n26"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA5-Rq-zwg">
-                                        <rect key="frame" x="119" y="49" width="166" height="18"/>
+                                        <rect key="frame" x="120" y="49" width="165" height="18"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUa-qu-FR0">
-                                        <rect key="frame" x="119" y="70" width="166" height="18"/>
+                                        <rect key="frame" x="120" y="70.666666666666671" width="165" height="18"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wfr-JX-wKa">
-                                        <rect key="frame" x="119" y="26.666666666666671" width="166" height="25"/>
+                                        <rect key="frame" x="120" y="26" width="165" height="25"/>
                                         <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -2088,7 +2094,7 @@
                                         <rect key="frame" x="40" y="207.66666666666663" width="240" height="104"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="hSo-m7-SPm" customClass="RoundImageView" customModule="Tendy" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="26.666666666666654" width="52" height="51.666666666666657"/>
+                                                <rect key="frame" x="20" y="26.666666666666682" width="52" height="51.666666666666657"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="hSo-m7-SPm" secondAttribute="height" multiplier="1:1" id="Vsu-kg-kbi"/>
                                                 </constraints>
@@ -2097,7 +2103,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="man|g fg gdgd|dfgdfgd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V77-Z9-yLV">
-                                                <rect key="frame" x="79.666666666666671" y="44.333333333333314" width="155.33333333333331" height="16.333333333333329"/>
+                                                <rect key="frame" x="79.666666666666671" y="44.333333333333343" width="155.33333333333331" height="16.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Regular" family="Open Sans Hebrew" pointSize="12"/>
                                                 <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2109,7 +2115,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qy0-Fa-HUl">
-                                                <rect key="frame" x="79.666666666666671" y="26.666666666666657" width="155.33333333333331" height="23.666666666666671"/>
+                                                <rect key="frame" x="79.666666666666671" y="26.666666666666686" width="155.33333333333331" height="23.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="OpenSansHebrew-Bold" family="Open Sans Hebrew" pointSize="17"/>
                                                 <color key="textColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2663,7 +2669,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isRound" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>

@@ -25,7 +25,7 @@ class CustomTabBarController: UITabBarController {
         var y:CGFloat = 64
         let height = UIScreen.main.bounds.size.height
         if (height == 812.0){
-            y = 84
+            y = 88
         }
         tabBarFrame = CGRect(x: 0, y: y, width: UIScreen.main.bounds.size.width, height: h)
 
