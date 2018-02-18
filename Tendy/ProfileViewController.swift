@@ -33,6 +33,9 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
     @IBOutlet weak var btnOther: DLRadioButton!
     @IBOutlet weak var viewUnenableChangeGender: UIView!
     @IBOutlet weak var imgProfile: RoundButton!
+    
+    @IBOutlet weak var imagProfile_img: UIImageView!
+    
     @IBOutlet weak var txtFldName: UnderLineTextField!
     @IBOutlet weak var txtFldAge: UnderLineTextField!
     @IBOutlet weak var txtFldProfession: UnderLineTextField!
@@ -109,11 +112,9 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
             profile.pushToken = ServerController.deviceToken
             profile.deviceType = DeviceTypeEnum.iphone.rawValue
             ServerController.saveImgProfie(image: imgProfile.image(for: .normal), profile: profile,function: saveReturn)
-            // ServerController.saveImgProfie(image: changedImage==true ? image:nil, profile: profile,function: saveReturn)
+
         }
-        //        }else{
-        //            self.showAlertViewNoInternent()
-        //        }
+
     }
     
     override func saveReturn(_ error: Error?, _ ref: DatabaseReference) {
@@ -370,6 +371,8 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
             //print(Auth.auth().currentUser?.photoURL)
             imgProfile.setImgwithUrl((Auth.auth().currentUser?.photoURL?.absoluteString)!)
             
+            
+            
             // image=manImage
         }else{
             imgProfile.setImage(#imageLiteral(resourceName: "default_profile_image"), for: .normal)
@@ -539,8 +542,12 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
         txtFldProfession.text=profile.profession
 //        let imgUrl = profile.imageUrl
 //        imgProfile.setImgwithUrl(profile.imageUrl)
-        imgProfile.setImgwithUrl(profile.imageUrl, contentMode: .center)
+//        imgProfile.setImgwithUrl(profile.imageUrl, contentMode: .scaleToFill)
 
+        self.setProfileImage(profile.imageUrl)
+
+
+        
         setBtnsGender()
     }
     
@@ -552,6 +559,16 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
             btnWoman.isSelected=true
         }else if(profile.gender==Gender.other.description){
             btnOther.isSelected=true
+        }
+    }
+    
+    
+    func setProfileImage(_ link:String?)
+    {
+        if link != nil{
+            imagProfile_img.downloadedFrom(link: link!, contentMode: .scaleToFill)
+            imagProfile_img.layer.cornerRadius = imagProfile_img.frame.size.width / 2
+            self.imagProfile_img.layer.masksToBounds = true
         }
     }
     

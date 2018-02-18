@@ -24,6 +24,32 @@ extension UIImageView {
 
 extension UIImage {
     
+    
+    var isPortrait:  Bool    { return size.height > size.width }
+    var isLandscape: Bool    { return size.width > size.height }
+    var breadth:     CGFloat { return min(size.width, size.height) }
+    var breadthSize: CGSize  { return CGSize(width: breadth, height: breadth) }
+    var breadthRect: CGRect  { return CGRect(origin: .zero, size: breadthSize) }
+    var squared: UIImage? {
+        UIGraphicsBeginImageContextWithOptions(breadthSize, false, scale)
+        defer { UIGraphicsEndImageContext() }
+        guard let cgImage = cgImage?.cropping(to: CGRect(origin: CGPoint(x: isLandscape ? floor((size.width - size.height) / 2) : 0, y: isPortrait  ? floor((size.height - size.width) / 2) : 0), size: breadthSize)) else { return nil }
+        UIImage(cgImage: cgImage).draw(in: breadthRect)
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
+    
+    
+    func crop( rect: CGRect) -> UIImage {
+        var rect = rect
+        rect.origin.x*=self.scale
+        rect.origin.y*=self.scale
+        rect.size.width*=self.scale
+        rect.size.height*=self.scale
+        
+        let imageRef = self.cgImage!.cropping(to: rect)
+        let image = UIImage(cgImage: imageRef!, scale: self.scale, orientation: self.imageOrientation)
+        return image
+    }
 
     func imageResize (sizeChange:CGSize)-> UIImage{
         

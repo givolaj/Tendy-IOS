@@ -74,7 +74,6 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
     var longPressRecognizerDeleteMsg:UILongPressGestureRecognizer!
     
     var  toSendValues: Bool{
-        //return txtVMessageText.text.isEmpty && changedImage==false ?  false : true
         return (txtVMessageText.textColor == UIColor.lightGray || txtVMessageText.text.isEmpty) && changedImage==false ?  false : true
     }
     
@@ -611,10 +610,7 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
                         self.txtVMessageText.text = self.txtVMessageText.textColor == UIColor.lightGray ? self.txtMessagePlaceHolder : self.txtVMessageText.text
                     }
                 }
-                
-//                if self.sendImage == false{
-//                self.txtVMessageText.text = self.txtVMessageText.text == "" ? "" : self.txtMessagePlaceHolder
-//                }
+
                 if self.state == State.blocked{
                     DispatchQueue.main.async {
                         self.showAlertView(title: "issue".localized, msg: "youve_been_blocked".localized, okButtonTitle:"GO".localized, okFunction: {
@@ -997,17 +993,6 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
             btnSend.isEnabled = false
             let chat =  crateChat()
             sendImage = changedImage
-            //            if isKeyboardOpen{
-            //                txtVMessageText.text = changedImage==false ? "" : txtVMessageText.text
-            //                txtVMessageText.textColor = UIColor.black
-            //            }else{
-            //                //txtVMessageText.text = state == .invited ? "waiting_for_invitation".localized : "write_a_msg".localized
-            //                txtMessagePlaceHolder = state == .haveInvited ? "waiting_for_invitation".localized : "write_a_msg".localized
-            //                if changedImage==false{
-            //                txtVMessageText.text = txtMessagePlaceHolder
-            //                txtVMessageText.textColor = UIColor.lightGray
-            //                }
-            //            }
             
             if isKeyboardOpen{
                 if sendImage == false{
@@ -1022,14 +1007,7 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
                 }
             }
             
-            //            if isKeyboardOpen{
-            //                txtVMessageText.text = ""
-            //                txtVMessageText.textColor = UIColor.black
-            //            }else{
-            //                txtVMessageText.text = state == .haveInvited ? "waiting_for_invitation".localized : "write_a_msg".localized
-            //                txtVMessageText.text = txtMessagePlaceHolder
-            //                txtVMessageText.textColor = UIColor.lightGray
-            //            }
+      
             
             if(arrChats.count==0){
                 ServerController.saveChatPartner( profile: member,  status: .haveInvited , function: { (error, ref) in
@@ -1059,28 +1037,7 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
         super.saveReturn(error, ref,false)
         btnSend.isEnabled = true
         if error == nil{
-            //            if isKeyboardOpen{
-            //                txtVMessageText.text = sendImage==false ? "" : txtVMessageText.text
-            //                txtVMessageText.textColor = UIColor.black
-            //            }else{
-            //                //txtVMessageText.text = state == .invited ? "waiting_for_invitation".localized : "write_a_msg".localized
-            //                txtMessagePlaceHolder = state == .haveInvited ? "waiting_for_invitation".localized : "write_a_msg".localized
-            //                if sendImage==false{
-            //                    txtVMessageText.text = txtMessagePlaceHolder
-            //                    txtVMessageText.textColor = UIColor.lightGray
-            //                }
-            //            }
-            //            if isKeyboardOpen{
-            //                txtVMessageText.text = changedImage==false ? "" : txtVMessageText.text
-            //                txtVMessageText.textColor = UIColor.black
-            //            }else{
-            //                //txtVMessageText.text = state == .invited ? "waiting_for_invitation".localized : "write_a_msg".localized
-            //                txtMessagePlaceHolder = state == .haveInvited ? "waiting_for_invitation".localized : "write_a_msg".localized
-            //                if changedImage==false{
-            //                    txtVMessageText.text = txtMessagePlaceHolder
-            //                    txtVMessageText.textColor = UIColor.lightGray
-            //                }
-            //            }
+            
             
             if isKeyboardOpen{
                 if sendImage == false{
@@ -1092,22 +1049,14 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
             }else{
                 txtMessagePlaceHolder = state == .haveInvited ? "waiting_for_invitation".localized : "write_a_msg".localized
                 if sendImage == false{
-                //txtVMessageText.text = txtMessagePlaceHolder
-                //txtVMessageText.textColor = UIColor.lightGray
+     
                 }else{
                     sendImage = false
                 }
             }
             
             
-//            if isKeyboardOpen{
-//                txtVMessageText.text = ""
-//                txtVMessageText.textColor = UIColor.black
-//            }else{
-//                txtVMessageText.text = state == .haveInvited ? "waiting_for_invitation".localized : "write_a_msg".localized
-//                txtVMessageText.text = txtMessagePlaceHolder
-//                txtVMessageText.textColor = UIColor.lightGray
-//            }
+
             if self.myProfileInPartner == nil{
             ServerController.getChatPartnerStateAndProfile(id: self.member.identifier, function: { (dic:[String:AnyObject]?, error:Error?) in
                 let partner = ChatPartners(dic:dic)
@@ -1186,7 +1135,6 @@ class ChatViewController: SuperViewController,UITableViewDelegate,UITableViewDat
     
     override func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
-            //   textView.text = "write_a_msg".localized
             textView.text = txtMessagePlaceHolder
             textView.textColor = UIColor.lightGray
         }

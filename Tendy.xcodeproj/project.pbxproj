@@ -44,6 +44,7 @@
 		ADFD714CCDB5DA890182CE63 /* Pods_TendyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB95C2FF1D984F44A4D2A67 /* Pods_TendyUITests.framework */; };
 		B6B1B1317C07755F4EBB9AFA /* Pods_Tendy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D30E2976232C64E37EF86E /* Pods_Tendy.framework */; };
 		BA279C6820358C0A00479311 /* PhoneFormatterKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA279C6720358C0A00479311 /* PhoneFormatterKit.swift */; };
+		BA279C6A2039F5E200479311 /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA279C692039F5E200479311 /* UIImageView+Extention.swift */; };
 		E03EA3E80EB184C0B7035EA5 /* Pods_TendyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8CED146BC30F819B9AA284 /* Pods_TendyTests.framework */; };
 		FC13BDBB1F4D683400FBD00C /* P2PKit-Blutooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC13BDBA1F4D683400FBD00C /* P2PKit-Blutooth.swift */; };
 		FC13BDBF1F4EAA7900FBD00C /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC13BDBE1F4EAA7900FBD00C /* UIImage+Gif.swift */; };
@@ -134,6 +135,7 @@
 		7C99E20F226CC52654CC75A5 /* Pods-Tendy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tendy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tendy/Pods-Tendy.debug.xcconfig"; sourceTree = "<group>"; };
 		7D00627BBE2F1CC2D2CFF663 /* Pods-TendyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TendyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TendyTests/Pods-TendyTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA279C6720358C0A00479311 /* PhoneFormatterKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFormatterKit.swift; sourceTree = "<group>"; };
+		BA279C692039F5E200479311 /* UIImageView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extention.swift"; sourceTree = "<group>"; };
 		FC13BDB71F4D674300FBD00C /* Tendy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tendy-Bridging-Header.h"; sourceTree = "<group>"; };
 		FC13BDBA1F4D683400FBD00C /* P2PKit-Blutooth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "P2PKit-Blutooth.swift"; sourceTree = "<group>"; };
 		FC13BDBE1F4EAA7900FBD00C /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				FC13BDBA1F4D683400FBD00C /* P2PKit-Blutooth.swift */,
 				FC5A51301F7925E9006C5CD8 /* LocalNoteficationManager.swift */,
 				FC5385BE1F9CA0D900EF3F8B /* CustomPhotoAlbum.swift */,
+				BA279C692039F5E200479311 /* UIImageView+Extention.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -712,6 +715,7 @@
 				56143E281F31E7440005E65A /* ChatCell.swift in Sources */,
 				FC19972B1F691B65008702DA /* LoginViewController.swift in Sources */,
 				56143E041F2DC2B20005E65A /* PageContentViewController.swift in Sources */,
+				BA279C6A2039F5E200479311 /* UIImageView+Extention.swift in Sources */,
 				BA279C6820358C0A00479311 /* PhoneFormatterKit.swift in Sources */,
 				FC13BDBB1F4D683400FBD00C /* P2PKit-Blutooth.swift in Sources */,
 				56143E081F2DE1280005E65A /* Extentions.swift in Sources */,

@@ -777,7 +777,7 @@ extension UIButton
     }
     
     func setImgwithUrl(_ link: String, contentMode mode: UIViewContentMode = .scaleAspectFill,completion: @escaping (_ exist:Bool)->()={_ in }) {
-        //func setImgwithUrl(_ link: String, contentMode mode: UIViewContentMode = .scaleToFill,completion: @escaping (_ exist:Bool)->()={_ in }) {
+
         self.contentVerticalAlignment = .fill
         self.contentHorizontalAlignment = .fill
         if(imgesDic[link]==nil)
@@ -786,7 +786,7 @@ extension UIButton
         }
         else{
             DispatchQueue.main.async() { () -> Void in
-                //self.setBackgroundImage(imgesDic[link], for: .normal)
+  
                 self.setImage(imgesDic[link], for: .normal)
                 
                 self.imageView!.contentMode = mode
