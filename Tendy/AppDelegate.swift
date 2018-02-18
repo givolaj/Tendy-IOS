@@ -615,22 +615,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate/*,CBCentralManagerDelegate
     
     func runBackgroundTask(_ time: Int) -> Void {
         //check if application is in background mode
-        if UIApplication.shared.applicationState == .background {
-            let app = UIApplication.shared
-            //create new uiBackgroundTask
-            var bgTask: UIBackgroundTaskIdentifier!
-            //create UIBackgroundTaskIdentifier and create tackground task, which starts after time
-            bgTask = app.beginBackgroundTask(expirationHandler: {() -> Void in
-                app.endBackgroundTask(bgTask)
-                bgTask = UIBackgroundTaskInvalid
-            })
-            DispatchQueue.global(qos: .default).async(execute: {() -> Void in
-                
-                let t = Timer.scheduledTimer(timeInterval: TimeInterval(exactly: time) ?? 0.0, target: self, selector: #selector(self.startTrackingBg), userInfo: nil, repeats: false)
-                RunLoop.current.add(t, forMode: .defaultRunLoopMode)
-                RunLoop.current.run()
-                
-            })
+        DispatchQueue.main.async {
+            if UIApplication.shared.applicationState == .background {
+                let app = UIApplication.shared
+                //create new uiBackgroundTask
+                var bgTask: UIBackgroundTaskIdentifier!
+                //create UIBackgroundTaskIdentifier and create tackground task, which starts after time
+                bgTask = app.beginBackgroundTask(expirationHandler: {() -> Void in
+                    app.endBackgroundTask(bgTask)
+                    bgTask = UIBackgroundTaskInvalid
+                })
+                DispatchQueue.global(qos: .default).async(execute: {() -> Void in
+                    
+                    let t = Timer.scheduledTimer(timeInterval: TimeInterval(exactly: time) ?? 0.0, target: self, selector: #selector(self.startTrackingBg), userInfo: nil, repeats: false)
+                    RunLoop.current.add(t, forMode: .defaultRunLoopMode)
+                    RunLoop.current.run()
+                    
+                })
+            }
         }
     }
     var locationStarted = false

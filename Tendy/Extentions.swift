@@ -415,7 +415,7 @@ extension UIImageView
 {
     func scallFillImg()
     {
-        contentMode = UIViewContentMode.scaleAspectFill
+        contentMode = UIViewContentMode.scaleToFill
         clipsToBounds=true
     }
     func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFill, toSave:Bool, imageName:String ,completion: @escaping (_ exist:Bool)->()) {
@@ -798,7 +798,7 @@ extension UIButton
     
 //    func setImage(image: UIImage?, inFrame frame: CGRect?, forState state: UIControlState){
 //        self.setImage(image, for: state)
-//        
+//
 //        if let frame = frame{
 //            self.imageEdgeInsets = UIEdgeInsets(
 //                top: frame.minY - self.frame.minY,

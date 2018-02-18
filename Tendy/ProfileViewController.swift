@@ -33,9 +33,6 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
     @IBOutlet weak var btnOther: DLRadioButton!
     @IBOutlet weak var viewUnenableChangeGender: UIView!
     @IBOutlet weak var imgProfile: RoundButton!
-    
-    @IBOutlet weak var imagProfile_img: UIImageView!
-    
     @IBOutlet weak var txtFldName: UnderLineTextField!
     @IBOutlet weak var txtFldAge: UnderLineTextField!
     @IBOutlet weak var txtFldProfession: UnderLineTextField!
@@ -218,7 +215,7 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
         //04/01/2018
         let btnIcon = AppDelegate.isRTL ? FontAwesome.chevronRight : FontAwesome.chevronLeft
         btnBack.textFontAwesome(btnIcon)
-        conHeightSecond.constant = 0
+        conHeightSecond?.constant = 0
         
         self.navigationController?.isNavigationBarHidden = false
         firstRealProfile == false ? setProfile() : setFirstRealProfile()
@@ -566,9 +563,11 @@ class ProfileViewController: SuperRevealViewController,UITabBarControllerDelegat
     func setProfileImage(_ link:String?)
     {
         if link != nil{
-            imagProfile_img.downloadedFrom(link: link!, contentMode: .scaleToFill)
-            imagProfile_img.layer.cornerRadius = imagProfile_img.frame.size.width / 2
-            self.imagProfile_img.layer.masksToBounds = true
+            imgProfile?.imageView?.downloadedFrom(link: link!, contentMode: .scaleAspectFill)
+            imgProfile.imageView?.layer.cornerRadius = (imgProfile.imageView?.frame.size.width)! / 2
+            self.imgProfile?.imageView?.layer.masksToBounds = true
+            self.imgProfile?.imageView?.layer.borderColor = UIColor.lightGray.cgColor
+            self.imgProfile?.imageView?.layer.borderWidth = 1
         }
     }
     
